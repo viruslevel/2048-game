@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2048</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>2048</h1>
+      <div class="scores">
+        <div class="score-box">
+          <div class="label">Puntos</div>
+          <div id="score">0</div>
+        </div>
+        <div class="score-box">
+          <div class="label">Mejor</div>
+          <div id="best-score">0</div>
+        </div>
+      </div>
+    </div>
+    <div class="controls">
+      <p>Junta las fichas para llegar a <strong>2048</strong></p>
+      <button id="new-game">Nuevo juego</button>
+    </div>
+    <div class="grid-container" id="grid-container"></div>
+    <p class="hint">Usa las flechas del teclado o desliza en móvil</p>
+  </div>
+
+  <div class="overlay" id="overlay">
+    <div class="overlay-content">
+      <h2 id="overlay-title">¡Juego terminado!</h2>
+      <button id="try-again">Intentar de nuevo</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
